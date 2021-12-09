@@ -34,5 +34,4 @@ const partTwo = (input) => {
   return count;
 };
 
-
 export default { partOne, partTwo };
