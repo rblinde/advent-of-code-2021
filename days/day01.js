@@ -16,6 +16,7 @@ const partOne = (input) => {
   return count;
 };
 
+
 const partTwo = (input) => {
   const lines = input.split('\n').map(e => Number(e));
   let prev = lines[0] + lines[1] + lines[2];
@@ -33,5 +34,6 @@ const partTwo = (input) => {
 
   return count;
 };
+
 
 export default { partOne, partTwo };

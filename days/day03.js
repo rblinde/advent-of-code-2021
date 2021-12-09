@@ -40,4 +40,5 @@ const partTwo = (input) => {
   return oxygen * co2;
 };
 
+
 export default { partOne, partTwo };

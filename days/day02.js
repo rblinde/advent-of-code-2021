@@ -22,6 +22,7 @@ const partOne = (input) => {
   return depth * position;
 };
 
+
 const partTwo = (input) => {
   const lines = input.split('\n');
   let depth = 0;
@@ -47,5 +48,6 @@ const partTwo = (input) => {
 
   return depth * position;
 };
+
 
 export default { partOne, partTwo };
