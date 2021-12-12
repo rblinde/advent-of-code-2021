@@ -4,6 +4,7 @@ import day03 from './day03.js';
 import day04 from './day04.js';
 import day05 from './day05.js';
 import day06 from './day06.js';
+import day07 from './day07.js';
 
 const days = [
   day01,
@@ -12,6 +13,7 @@ const days = [
   day04,
   day05,
   day06,
+  day07,
 ];
 
 export default days;
