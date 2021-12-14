@@ -1,5 +1,5 @@
 const partOne = (input) => {
-  const crabs = input.split(',').map(e => Number(e));
+  const crabs = input.split(',').map(Number);
   const min = Math.min(...crabs);
   const max = Math.max(...crabs);
   const cheepest = [0, 1e12];
@@ -18,7 +18,7 @@ const partOne = (input) => {
 
 
 const partTwo = (input) => {
-  const crabs = input.split(',').map(e => Number(e));
+  const crabs = input.split(',').map(Number);
   const min = Math.min(...crabs);
   const max = Math.max(...crabs);
   const cheepest = [0, 1e12];

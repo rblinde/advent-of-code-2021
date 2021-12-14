@@ -1,5 +1,5 @@
 const partOne = (input) => {
-  let fishes = input.split(',').map(e => Number(e));
+  let fishes = input.split(',').map(Number);
 
   for (let i = 0; i < 80; i++) {
     for (const i in fishes) {
@@ -17,7 +17,7 @@ const partOne = (input) => {
 
 
 const partTwo = (input) => {
-  const fishes = input.split(',').map(e => Number(e));
+  const fishes = input.split(',').map(Number);
   let counts = new Array(9).fill(0);
 
   for (const fish of fishes) {

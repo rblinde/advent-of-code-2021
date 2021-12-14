@@ -43,7 +43,7 @@ const partOne = (input) => {
   const dict = new Dictionary();
 
   for (const line of lines) {
-    const [x1, y1, x2, y2] = line.match(/\d+/g).map(e => Number(e));
+    const [x1, y1, x2, y2] = line.match(/\d+/g).map(Number);
 
     if (x1 === x2 || y1 === y2) {
       for (const [x, y] of getCoordsOnLine(x1, y1, x2, y2)) {
@@ -61,7 +61,7 @@ const partTwo = (input) => {
   const dict = new Dictionary();
 
   for (const line of lines) {
-    const [x1, y1, x2, y2] = line.match(/\d+/g).map(e => Number(e));
+    const [x1, y1, x2, y2] = line.match(/\d+/g).map(Number);
 
     for (const [x, y] of getCoordsOnLine(x1, y1, x2, y2)) {
       dict.add(`${x},${y}`);

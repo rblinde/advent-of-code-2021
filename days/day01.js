@@ -1,5 +1,5 @@
 const partOne = (input) => {
-  const lines = input.split('\n').map(e => Number(e));
+  const lines = input.split('\n').map(Number);
   let prev = lines[0];
   let count = 0;
 
@@ -18,7 +18,7 @@ const partOne = (input) => {
 
 
 const partTwo = (input) => {
-  const lines = input.split('\n').map(e => Number(e));
+  const lines = input.split('\n').map(Number);
   let prev = lines[0] + lines[1] + lines[2];
   let count = 0;
 

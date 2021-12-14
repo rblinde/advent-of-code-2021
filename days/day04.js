@@ -58,7 +58,7 @@ const createBoards = (lines) => {
     const board = new Board();
 
     for (let j = i; j < i + 5; j++) {
-      const boardNumbers = lines[j].match(/\d+/g).map(e => Number(e));
+      const boardNumbers = lines[j].match(/\d+/g).map(Number);
       board.add(boardNumbers);
     }
 
@@ -71,7 +71,7 @@ const createBoards = (lines) => {
 
 const partOne = (input) => {
   const lines = input.split('\n');
-  const numbers = lines[0].split(',').map(e => Number(e));
+  const numbers = lines[0].split(',').map(Number);
   const boards = createBoards(lines);
 
   // Draw numbers and pick winner
@@ -91,7 +91,7 @@ const partOne = (input) => {
 
 const partTwo = (input) => {
   const lines = input.split('\n');
-  const numbers = lines[0].split(',').map(e => Number(e));
+  const numbers = lines[0].split(',').map(Number);
   let boards = createBoards(lines);
 
   // Draw numbers and pick winner
