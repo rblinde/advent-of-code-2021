@@ -28,10 +28,8 @@ const partOne = (input) => {
     const flashed = new Set();
 
     // Step 1: increase by 1
-    for (let y = 0; y < 10; y++) {
-      for (let x = 0; x < 10; x++) {
-        matrix[`${y}${x}`] += 1;
-      }
+    for (const pos in matrix) {
+      matrix[pos] += 1;
     }
 
     // Step 2: find flashed
@@ -87,10 +85,8 @@ const partTwo = (input) => {
     const flashed = new Set();
 
     // Step 1: increase by 1
-    for (let y = 0; y < 10; y++) {
-      for (let x = 0; x < 10; x++) {
-        matrix[`${y}${x}`] += 1;
-      }
+    for (const pos in matrix) {
+      matrix[pos] += 1;
     }
 
     // Step 2: find flashed
